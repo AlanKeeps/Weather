@@ -11,6 +11,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.FragmentActivity
 import com.example.weather.adapters.VpAdapter
 import com.example.weather.databinding.FragmentMainBinding
+import com.example.weather.isPermissionGranted
 import com.example.weather.isPermissonGranted
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -60,7 +61,7 @@ class MainFragment : Fragment() {
     }
 
     private fun checkPermission() {
-        if (!isPermissonGranted(Manifest.permission.ACCESS_FINE_LOCATION))
+        if (!isPermissionGranted(Manifest.permission.ACCESS_FINE_LOCATION))
             permissionListener()
             pLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
     }
