@@ -12,7 +12,6 @@ import androidx.fragment.app.FragmentActivity
 import com.example.weather.adapters.VpAdapter
 import com.example.weather.databinding.FragmentMainBinding
 import com.example.weather.isPermissionGranted
-import com.example.weather.isPermissonGranted
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainFragment : Fragment() {
